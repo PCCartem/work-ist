@@ -1,6 +1,6 @@
 Для начала работы с вим:
     
-    apt-get install vim
+    sudo apt-get install vim
     cp /usr/share/vim/vim72/vimrc_example.vim ~/.vimrc
 
 Конфиг
