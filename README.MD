@@ -3,6 +3,7 @@
     sudo apt-get install vim
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     cp /etc/vim/vimrc ~/.vimrc
+    sudo apt-get install exuberant-ctags
 
 Конфиг
 
@@ -146,4 +147,4 @@ autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
 
 Bundle 'arnaud-lb/vim-php-namespace'
 
-
+После того как скопируешь конфиг на место старого нужно из вима выполнить :PluginInstall
