@@ -69,7 +69,7 @@ call vundle#begin()
 filetype plugin indent on
 
 " let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " common
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
