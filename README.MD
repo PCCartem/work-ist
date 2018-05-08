@@ -64,8 +64,9 @@ syntax on
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+filetype plugin indent on
 
 " let Vundle manage Vundle
 Bundle 'gmarik/vundle'
