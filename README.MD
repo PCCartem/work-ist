@@ -7,7 +7,7 @@
 
 Конфиг
 
-    " All system-wide defaults are set in $VIMRUNTIME/debian.vim and sourced by
+" All system-wide defaults are set in $VIMRUNTIME/debian.vim and sourced by
 " the call to :runtime you can find below.  If you wish to change any of those
 " settings, you should do it in this file (/etc/vim/vimrc), since debian.vim
 " will be overwritten everytime an upgrade of the vim packages is performed.
@@ -65,12 +65,11 @@ syntax on
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-filetype plugin indent on
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
 " let Vundle manage Vundle
-Plugin 'VundleVim/Vundle.vim'
+Bundle 'gmarik/vundle'
 
 " common
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
@@ -147,4 +146,9 @@ autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
 
 Bundle 'arnaud-lb/vim-php-namespace'
 
+colo elflord
+set number
+
 После того как скопируешь конфиг на место старого нужно из вима выполнить :PluginInstall
+После, для генерации не забудь про теги
+    ctags -R --PHP-kinds=cfi
